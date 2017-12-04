@@ -13,7 +13,6 @@ A player is shown a random playing card, then asked to decide whether the next c
 *	The program will need to be able to award the user a cash prize if they are correct
 *	The program will need to be able to store the amount of cash the user has generated and allow that cash variable to be increased when the user correctly guesses
 *	The program will need to be on a loop so the user can play multiple rounds of the game
-*	The program will need to allow the user to exit the game whenever they please
 ## Non- Functional Specifications ##
 *	The program will need to display to the user what the first card is, by showing a written description of the cards attributes.
 *	The program will need to display to the user a written description of what the new card is after they have inputted their guess
@@ -34,7 +33,7 @@ The first procedure of the algorithm is to generate the first card, this means t
 ### Programming Language ###
 The programming language I am going to use to complete this solution is C++, this is because one of the requirements of this project is that I program it in C++.
 ### IDE ###
-To code this program I will use the IDE provided by the website repl.it. This website is helpful as it works as a compiler for a very large range of programming languages. Using this IDE will be helpful as it will provide me with more code insight, this is because the repl IDE knows the keywords of C++, meaning that they will be highlighted so that they will stand out so I can easily understand the structure of my code. Another benefit of using an IDE is that it has debugging tools and a built in compiler, which means I can thoroughly test my code before I upload it, and it helps me identify possible errors within my code.
+To code this program I will use the IDE (Integrated Development Environment) provided by the website repl.it. This website is helpful as it works as a compiler for a very large range of programming languages. Using this IDE will be helpful as it will provide me with more code insight, this is because the repl IDE knows the keywords of C++, meaning that they will be highlighted so that they will stand out so I can easily understand the structure of my code. Another benefit of using an IDE is that it has debugging tools and a built in compiler, which means I can thoroughly test my code before I upload it, and it helps me identify possible errors within my code.
 ### Coding Standards ###
 * In my coding I will use single line comments on most lines of code stating its purpose in the programv so that anyone reading the code can easily see how the sections of code work.
 * My variables in the code will be written in CamelCase and will be named after the purpose the variable will serve.
