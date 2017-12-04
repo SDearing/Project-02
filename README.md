@@ -45,3 +45,97 @@ To code this program I will use the IDE provided by the website repl.it. This we
 This first iteration of the solution randomly generates the first card that will be used in the game. To do this I use the <cstdlib> library to use random functions such as the rand()% function. I first use this function to create a pointer for my Suits list for the suit of the first card, then I use the function to create the value of the first card. Then I present both the first card’s attributes to the user in a clear way. This part of the development is a milestone because I have been able to implement the random functions which I can now use for the rest of my code. <br/>
 Now I need to create a similar piece of code that will create the second card that will be compared to the first card. I also need to make a while loop for when the user inputs “higher” or “lower” so that the user will be stuck in a loop until they enter one of those 2 words. This is to improve the robustness of the code by ensuring that the variable will only be two values.
 
+## Finished Code ##
+```cpp
+//
+#include <iostream> 
+#include <cstdlib> //imports random libary
+#include <array> 
+
+int main()
+{
+  using namespace std;
+  //Variables
+  string Suits[4] = {"Hearts","Diamonds","Clubs","Spades"};//List of Suits
+  bool GameEnd = false;//Boolean variable to decide when game has ended
+  bool CorrectInput = false;//Boolean variable to decide whether users input is correctly entered
+  int score=50;//Users Cash Score
+  int CardNumber1;//The value of the first card
+  string CardSuit1;//The suit of the first card
+  int CardNumber2;
+  string CardSuit2;
+  int pointer;//Pointer for picking a random suit from the list
+  string UserChoice;//Users choice of whether the next card will be higher or lower
+  
+  //Game Introduction
+  cout << "Welcome to the card guessing game\n";
+  cout << "You will be given a card and will be asked to guess whether the next card will be higher or lower\n";
+  cout << "If you guess correctly you be awarded £10, however if you guess wrong you lose £10\n";
+  cout << "You will start at £50, and will win the game once you have made £100\n";
+  
+  //main game loop
+  while (GameEnd == false){
+    //Presents Score
+    CorrectInput = false;
+    cout << "Beginning New Round\n";
+    cout << "You have £" << score << ".\n";
+    //Creates First Card
+    pointer = rand()%4; //picks random number between 0-3
+    CardNumber1 = rand()% 14 + 1; //picks random number from 1-13
+    CardSuit1 = Suits[pointer];
+    cout << "Your card is " << CardNumber1;
+    cout << " of " << CardSuit1 << ".\n";
+  
+    //User Input
+    while (CorrectInput == false){//while the user doesnt input 'lower' or 'higher'
+      cout << "Will the next card be higher or lower?\n";
+      cin >> UserChoice;
+      if (UserChoice == "higher"){
+        CorrectInput = true;
+      }
+      else if (UserChoice == "lower"){
+        CorrectInput = true;
+      }
+      else{
+        cout << "wrong input please only type 'higher' or 'lower'";
+      }
+    }
+    // Creates Second Card
+    pointer = rand()%4;
+    CardNumber2 = rand()% 14 + 1;
+    CardSuit2 = Suits[pointer];
+    cout << "Your second card is " << CardNumber2;
+    cout << " of " << CardSuit2 << ".\n";
+    
+    // User Guess Check
+    if (CardNumber1 > CardNumber2){
+      if (UserChoice == "higher"){
+        cout << "You Answered Incorrectly, you will lose £10 \n";
+        score = score - 10;
+      }
+      else{
+        cout << "You answered correctly, you will be awarded £10 \n";
+        score = score + 10;
+      }
+    }
+    else if (CardNumber1 < CardNumber2){
+      if (UserChoice == "higher"){
+        cout << "You answered correctly, you will be awarded £10 \n";
+        score = score + 10;
+      }
+      else{
+        cout << "You answred incorrectly, you will lose £10 \n";
+        score = score - 10;
+      }
+    }
+    else{
+      cout << "No difference between cards, restarting round \n";
+    }
+    
+    //Win Condition
+    if (score == 100){
+      GameEnd = true;
+    }
+  }
+} 
+```
