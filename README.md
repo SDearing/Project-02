@@ -23,7 +23,7 @@ A player is shown a random playing card, then asked to decide whether the next c
 ## Overall Look ##
 The game will be text based, it will display cards by generating a description of the card, a number between 1-13 will be generated, if the number is 1 it will be transferred to an Ace, if the number is 11 it will be transferred to a Jack, if 12 is generated it will be transferred to a queen and if a 13 is generated it will be transferred to a king. Then a suit will be generated from the selection of ‘Hearts’, ‘Clubs’, ‘Spades’ and ‘diamonds’.  This will then be displayed to the user by printing a phrase structured like so: “Your card is ‘number’ of ‘suit’. <br />
 The program will tell the user when an input is required, this input will always be the user typing in either “higher” or “lower. If the user guesses correctly they will be awarded £10 however if they guess incorrectly they will lose £10, the game will end once the user has scored £100
-## User Story ##
+## User Guide ##
 ![userstory](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/User%20Story.PNG)
 ## FlowChart ##
 ![FlowChart](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/Flowchart.PNG)
