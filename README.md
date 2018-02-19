@@ -2,7 +2,36 @@
 Second project of Video Games Design HND course at West Herts College
 ## Project Outline ##
 A player is shown a random playing card, then asked to decide whether the next card will be ‘higher’ or ‘lower’. If the guess is correct the player is awarded with a ‘cash’ prize.
-## Functional Specifications ##
+## Project Aims ##
+* Generate a random playing card
+* Allow user to input their guess of whether the next card will be higher or lower
+* Generate a second random playing card
+* Compare both playing cards
+* Reward the user with a cash prize if they guessed correctly
+## Decomposition of Aims
+Decomposition is a problem solving technique which is the process of breaking down tasks into smaller and simpler sub-tasks, this helps me fully understand a task and therefore will allow me to complete each task more easily.
+### Generate a random playing card
+* Generate a random suit
+* Generate a random number 
+* Save both generated values as CardOneSuit and CardOneValue
+### Allow user to input their guess of whether the next card will be higher or lower
+* Create an input that only allows the input 'higher' or 'lower'
+* Display to the user that they need to input 'higher' or 'lower'
+* Save users input
+### Generate a Second Random Playing Card
+* Generate a random suit
+* Generate a random number 
+* Save both generated values as CardTwoSuit and CardTwoValue
+### Compare Both Playing Cards
+* Get the values of both cards
+* Save the answer as 'lower' if the value of the first card is larger than the second
+* Save the answer as 'higher' if the value of the first card is lower than the second
+### Reward the user with a cash prize if they guessed correctly
+* Compare the users input with the answer
+* If the users input is the same as the answer add £10 to the users cash score
+## Specifications
+Now that I have broken down the aims I can now transfer these sub-problems into specifications for the algorithm, these specifications are seperated into functional specifications and non-functional specifications. Functional specifications are the actual processes the program needs to complete and the non-functional specifications are what the program needs to do to make sure the program runs correctly.
+### Functional Specifications ###
 *	The program will need to display cards to the user
 *	The program will need to pick a card randomly to display
 *	The program will need to allow the user to input their guess of whether the next card will be higher or lower
@@ -13,7 +42,7 @@ A player is shown a random playing card, then asked to decide whether the next c
 *	The program will need to be able to award the user a cash prize if they are correct
 *	The program will need to be able to store the amount of cash the user has generated and allow that cash variable to be increased when the user correctly guesses
 *	The program will need to be on a loop so the user can play multiple rounds of the game
-## Non- Functional Specifications ##
+### Non-Functional Specifications ###
 *	The program will need to display to the user what the first card is, by showing a written description of the cards attributes.
 *	The program will need to display to the user a written description of what the new card is after they have inputted their guess
 *	The program will need to clearly display when it is time for the user to input their guess
