@@ -55,6 +55,7 @@ The program will tell the user when an input is required, this input will always
 ## User Guide ##
 ![userstory](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/User%20Story.PNG)
 ## FlowChart ##
+The use of a flowchart is a problem-solving technique as it helps plan out how my coded solution, in a more simple format. This makes sure I know what steps/procedures are needed to complete my coded solution.
 ![FlowChart](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/Flowchart.PNG)
 ### FlowChart Explanation ###
 The first procedure of the algorithm is to generate the first card, this means that the card's value and suit will be created for the first card. Once the first card has been generated then the user will be required to input either higher or lower, this is will act as the users guess and will be checked later on in the algorithm, once the algorithm has a desired input the second card will be generated. Next the algorithm checks whether the new card is larger than the first, depending on the answer the algorithm will branch to 1 of 2 decisions which will check what the users guess and determine whether they guessed correctly. If the user has guessed correctly they will be awarded £10 to their score, if they did not guess correctly £10 will be taken away from the user's score. Next the algorithm will be looped from the beggining untill the user has a score of £100. Once the user has a score of £100 then they will have won the game and it will end.
