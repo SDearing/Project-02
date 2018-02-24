@@ -8,8 +8,8 @@ A player is shown a random playing card, then asked to decide whether the next c
 * Generate a second random playing card
 * Compare both playing cards
 * Reward the user with a cash prize if they guessed correctly
-## Decomposition of Aims
-Decomposition is a problem solving technique which is the process of breaking down tasks into smaller and simpler sub-tasks, this helps me fully understand a task and therefore will allow me to complete each task more easily.
+## Decomposition of Aims into Objectives
+Decomposition is a problem solving technique which is the process of breaking down tasks into smaller and simpler sub-tasks/objectives, this helps me fully understand a task and therefore will allow me to complete each aim easier.
 ### Generate a random playing card
 * Generate a random suit
 * Generate a random number 
