@@ -65,10 +65,10 @@ The programming language I am going to use to complete this solution is C++, thi
 ### IDE ###
 To code this program I will use the IDE (Integrated Development Environment) provided by the website repl.it. This website is helpful as it works as a compiler for a very large range of programming languages. Using this IDE will assist me with writing my code, this is because the repl IDE knows the keywords of C++, and the IDE will highlight such things as integers, strings and functions so that they stand out so I can easily identify them in my code. The IDE also can predict what keyword you are going to type and can give you possible suggestions of different keywords it thinks you want to type. Another benefit of using an IDE is that it has debugging tools and a built in compiler, which means if there are any syntax errors in my code the debugging tool can identify the location of the error, which is especially helpful when dealing with a large amount of lines of code.
 ### Coding Standards ###
-* Commenting: In my coding I will use single line comments on most lines of code stating its purpose in the programv so that anyone reading the code can easily see how the sections of code work.
+* Commenting: In my coding I will use single line comments on most lines of code stating its purpose in the program so that anyone reading the code can easily see how the sections of code work.
 * Variable Names: My variables in the code will be written in CamelCase and will be named after the purpose the variable will serve. For example if a variable holds the value for the users name I will name the variable 'UserName'.
-* Braces: I will use a brace ({ }) at the end of a line when announcing an indent but when the ident is complete I will close the indent with a brace on its own line.
-* Idents: To ident I will use tab to set out the idents in a clear and spaced out manner.
+* Braces: I will use a brace ({ }) at the end of a line when announcing an indent but when the indent is complete I will close the indent with a brace on its own line.
+* Indents: To indent I will use tab to set out the indents in a clear and spaced out manner.
 ## Development ##
 ### First Milestone ###
 ![FirstMilestone](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/First%20Milestone.PNG)<br/>
