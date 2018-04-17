@@ -68,7 +68,7 @@ To code this program I will use the IDE (Integrated Development Environment) pro
 * Commenting: In my coding I will use single line comments on most lines of code stating its purpose in the program so that anyone reading the code can easily see how the sections of code work.
 * Variable Names: My variables in the code will be written in CamelCase and will be named after the purpose the variable will serve. For example if a variable holds the value for the users name I will name the variable 'UserName'.
 * Braces: I will use a brace ({ }) at the end of a line when announcing an indent but when the indent is complete I will close the indent with a brace on its own line.
-* Indents: To indent I will use tab to set out the indents in a clear and spaced out manner.
+* Indents: To indent I will use the tab key to create the idents in my code, the size of these indents will be 4 spaces long.
 ## Development ##
 ### First Milestone ###
 ![FirstMilestone](https://github.com/SDearing/Project-02/blob/master/Assets%20for%20Readme/First%20Milestone.PNG)<br/>
